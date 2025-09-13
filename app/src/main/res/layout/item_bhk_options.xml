@@ -1,0 +1,180 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:paddingVertical="8dp">
+
+    <LinearLayout
+        android:id="@+id/layoutBHK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1RK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1 RK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1_5BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1.5 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2_5BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2.5 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="3 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3_5BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="3.5 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4_5BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4.5 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="5 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="6 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="7 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="8 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="9 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="10 BHK"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+</HorizontalScrollView>

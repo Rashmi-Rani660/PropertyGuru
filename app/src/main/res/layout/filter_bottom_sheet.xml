@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort By"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Filter Options -->
+    <Button
+        android:id="@+id/btnRelevance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Relevance"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPriceLowHigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Price - Low to High"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPriceHighLow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Price - High to Low"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPriceSqftLowHigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Price/sqft - Low to High"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPriceSqftHighLow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Price/sqft - High to Low"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnDateAdded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Date Added"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

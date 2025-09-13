@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#4C1F7A"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_marginStart="16dp"
+            android:text="Recent Activity"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Tabs Scrollable -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="#F6F8FA"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/tabLayout"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tabSearches"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:background="@drawable/tab_selected_bg"
+                android:text="Searches (19)"
+                android:textColor="#003366"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tabViews"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:background="@drawable/tab_unselected_bg"
+                android:text="Views (2)"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tabShortlist"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:background="@drawable/tab_unselected_bg"
+                android:text="Shortlist (0)"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tabContacted"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:background="@drawable/tab_unselected_bg"
+                android:text="Contacted (0)"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Content Container: FrameLayout + ScrollView stacked inside a FrameLayout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Scrollable Default Content (Searches) -->
+        <ScrollView
+            android:id="@+id/defaultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <!-- 22 June -->
+                <TextView
+                    android:text="22 June 2025"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:background="#F2F2F2"
+                    android:text="Rent in Noida Greater Noida Expressway, Noida, ₹ 0 - 30,000, 2,3 BHK, Residential Apartment, Independent House / Villa, Independent / Builder Floor, Serviced"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 21 June -->
+                <TextView
+                    android:text="21 June 2025"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:background="#F2F2F2"
+                    android:text="Rent in Noida Greater Noida Expressway, Noida, ₹ 0 - 25,000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 20 June -->
+                <TextView
+                    android:text="20 June 2025"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:background="#F2F2F2"
+                    android:text="Rent in Noida Greater Noida Expressway, Noida, ₹ 65,000 - 10+L"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:background="#F2F2F2"
+                    android:text="Rent in Noida Greater Noida Expressway, Noida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:background="#F2F2F2"
+                    android:text="Rent in Noida Greater Noida Expressway, Noida, ₹ 0 - 30,000, 2,3 BHK, Residential"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Fragment container for Views -->
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

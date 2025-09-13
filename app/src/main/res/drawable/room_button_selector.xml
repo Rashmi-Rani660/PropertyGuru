@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#D6CCFF" /> <!-- Light Purple -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+    <!-- Default (unselected) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- ✅ White Background -->
+            <stroke android:width="1dp" android:color="#CCCCCC" /> <!-- Light Gray Border -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+</selector>

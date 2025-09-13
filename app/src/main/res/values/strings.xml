@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Property Guru</string>
+    <string-array name="profile_options">
+        <item>Zero Brokerage Properties</item>
+        <item>Saved Search</item>
+        <item>My Transactions</item>
+    </string-array>
+    <string name="default_web_client_id">572402920857-h34tdoirkktompef9ipfp6ho4o6a6erc.apps.googleusercontent.com</string>
+</resources>

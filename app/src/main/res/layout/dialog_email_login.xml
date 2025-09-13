@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:text="Login to PropertyGuru"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:text="Forgot Password?"
+        android:textColor="#2979FF"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:backgroundTint="#2979FF"
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Register"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoogleSignIn"
+        android:text="Continue with Google"
+        android:backgroundTint="#DB4437"
+        android:textColor="#FFFFFF"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+</LinearLayout>

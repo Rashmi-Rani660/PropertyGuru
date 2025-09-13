@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUnfurnished"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Unfurnished"
+        android:background="@drawable/bg_property_unselected"
+        android:textColor="@color/grayText"
+        android:layout_marginEnd="8dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSemiFurnished"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Semi Furnished"
+        android:background="@drawable/bg_property_unselected"
+        android:textColor="@color/grayText"
+        android:layout_marginEnd="8dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFullyFurnished"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Fully Furnished"
+        android:background="@drawable/bg_property_unselected"
+        android:textColor="@color/grayText"
+        android:layout_marginEnd="8dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

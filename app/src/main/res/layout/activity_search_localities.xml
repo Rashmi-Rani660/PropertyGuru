@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Searching in "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/ivBack"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noida"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/tvTitle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tvChangeCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change City"
+            android:textColor="#5C38E3"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Search bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_search"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Locality, Landmark, Project..."
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="0dp" />
+
+        <ImageView
+            android:id="@+id/micIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mic" />
+    </LinearLayout>
+
+    <!-- Current Location -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/current_location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Use my current location"
+            android:textColor="#5C38E3"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Popular Localities title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular Localities"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Add RecyclerView or cards dynamically here (placeholder) -->
+            <include layout="@layout/locality_cards_section" />
+
+
+            <!-- Landmark Chips Placeholder -->
+            <include layout="@layout/landmark_chips_section" />
+
+
+            <!-- Projects card placeholder -->
+            <include layout="@layout/trending_projects_section" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

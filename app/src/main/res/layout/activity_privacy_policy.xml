@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Top Blue Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#4C1F7A"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:tint="@android:color/white"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return to home"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1F9FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Lock Icon -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lock_icon" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property Guru"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="#4C1F7A" />
+
+            <!-- Privacy Policy Section -->
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000" />
+
+            <!-- Section 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We, at Bitmax Technology Private Limited and our affiliated companies, are committed to respecting your privacy and ensuring protection of any personal data you share with us."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This Privacy Policy (“Policy”) governs our website and mobile application (collectively, the “Platform”). The Policy describes how Property Guru Application collects, uses, discloses and transfers personal data of users while browsing the Platform or using services therein (the “Services”)."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="16dp" />
+
+            <!-- Section Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Personal Data We Collect:"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Information you give us:\n\nThis includes name, contact info, property details, ID documents, payment info, voice recordings (if you use voiceovers), and any other info shared during sign-up, listing, or communication with us."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B. Information we collect from usage:\n\nThis includes your device info, location, usage patterns, preferences, cookies, transaction data, and app permissions like Camera, Location, etc."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C. Info from third parties:\n\nThis includes data from login providers (like Google), ad partners, and financial partners, or your use of third-party accounts."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+            <!-- 2. How We Use Your Data -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. How We Use Your Data"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We use your data to provide services, improve user experience, process transactions, personalize listings, and send alerts or updates relevant to your interests."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 3. Cookies -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Cookies"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We use cookies to enhance your browsing experience, remember preferences, and provide relevant content and ads."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 4. Who We Share Your Data With -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Who We Share Your Data With"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We may share your data with service providers, business partners, and legal authorities when necessary for service delivery, legal compliance, or protection of rights."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 5. User Rights -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. User Rights"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can access, update, or delete your personal data. You may also choose to opt out of certain communications."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 6. Data Storage -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Data Storage"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your data is stored securely on our servers and protected by industry-standard security measures."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 7. Retention -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Retention"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We retain your personal data only as long as necessary for our services or as required by law."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 8. Third-Party Links -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Third-Party Links"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our platform may contain links to third-party websites. We are not responsible for their privacy practices."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 9. Children -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Children"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our services are not intended for children under 18. We do not knowingly collect their personal data."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- 10. Changes to Policy -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Changes to Policy"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We may update this policy from time to time. Please review this page periodically for the latest version."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Help? Contact Us"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IVR Support: 8595986867\nEmail: info@propertygru.in, sales@propertygru.in\n\nAddress:\n Bitmax Technology Pvt. Ltd.\nTower - C, Unit - 1034,10th floor,Bhutani Alphathum, Sector 90, Noida"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A Bitmax Group Product\n© 2025 Bitmax Technology Pvt. Ltd. All rights reserved."
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#888888"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <!-- Search and Filter Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="Search locality or project"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Filters"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/filter" />
+    </LinearLayout>
+
+    <!-- Tab Row -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Tab: All -->
+            <LinearLayout
+                android:id="@+id/tabAll"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconAll"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/all"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="All" />
+
+                <TextView
+                    android:id="@+id/textAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tab: Projects -->
+            <LinearLayout
+                android:id="@+id/tabProjects"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconProjects"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/projects"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="Projects" />
+
+                <TextView
+                    android:id="@+id/textProjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projects"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineProjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tab: Housing Verified -->
+            <LinearLayout
+                android:id="@+id/tabVerified"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconVerified"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/house"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="Housing Verified" />
+
+                <TextView
+                    android:id="@+id/textVerified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Housing Verified"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineVerified"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tab: New Launches -->
+            <LinearLayout
+                android:id="@+id/tabLaunches"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconLaunches"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/newlaunches"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="New Launches" />
+
+                <TextView
+                    android:id="@+id/textLaunches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Launches"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineLaunches"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabReady"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconReady"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ready"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="Ready to Move" />
+
+                <TextView
+                    android:id="@+id/textReady"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ready to Move"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineReady"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tab: Owner Properties -->
+            <LinearLayout
+                android:id="@+id/tabOwner"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconOwner"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/owner"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="Owner Properties" />
+
+                <TextView
+                    android:id="@+id/textOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Properties"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tab: Your Choice -->
+            <LinearLayout
+                android:id="@+id/tabChoice"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iconChoice"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/choice"
+                    android:tint="@color/tab_unselected"
+                    android:contentDescription="Your Choice" />
+
+                <TextView
+                    android:id="@+id/textChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Choice"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_unselected"
+                    android:layout_marginTop="2dp" />
+
+                <View
+                    android:id="@+id/underlineChoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/tab_selected"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Cards Container -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CARD 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Horizontal images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/housep1"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/housep2"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/housep3"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 BHK Apartment in HSR Layout"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹1.25 Cr · 1600 sqft"
+                        android:textColor="#757575"
+                        android:textSize="15sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Furnished · Ready to Move"
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Horizontal images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house11"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house12"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house13"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 BHK Villa in Whitefield"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹2.10 Cr · 3000 sqft"
+                        android:textColor="#757575"
+                        android:textSize="15sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semi-Furnished · Ready to Move"
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Horizontal images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house1"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house2"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house3"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 BHK Villa in Whitefield"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹2.10 Cr · 3000 sqft"
+                        android:textColor="#757575"
+                        android:textSize="15sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semi-Furnished · Ready to Move"
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Horizontal images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house6"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house7"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house8"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 BHK Villa in Whitefield"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹2.10 Cr · 3000 sqft"
+                        android:textColor="#757575"
+                        android:textSize="15sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semi-Furnished · Ready to Move"
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Horizontal images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house9"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house10"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/house11"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 BHK Villa in Whitefield"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹2.10 Cr · 3000 sqft"
+                        android:textColor="#757575"
+                        android:textSize="15sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semi-Furnished · Ready to Move"
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Horizontal images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/housep1"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/housep2"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/housep3"
+                                android:scaleType="centerCrop"
+                                android:layout_marginEnd="8dp"
+                                android:background="@drawable/image_rounded" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 BHK Villa in Whitefield"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹2.10 Cr · 3000 sqft"
+                        android:textColor="#757575"
+                        android:textSize="15sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semi-Furnished · Ready to Move"
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Similarly you can add more cards same way -->
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- RecyclerView -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/projectsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Bottom Navigation Row -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingHorizontal="12dp">
+
+        <LinearLayout
+            android:id="@+id/navTopLocalities"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/top_localities"
+                android:contentDescription="Top Localities" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Localities"
+                android:textSize="11sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navSaved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/favourite"
+                android:contentDescription="Saved" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved"
+                android:textSize="11sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/profile"
+                android:contentDescription="Profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="11sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvAllHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Listings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView for showing listings -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

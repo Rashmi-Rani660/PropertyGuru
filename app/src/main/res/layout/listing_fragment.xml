@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Listing Count -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 listings"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Listing Card 1 -->
+        <include
+            layout="@layout/item_listing_card"
+            android:id="@+id/card_1" />
+
+        <!-- Listing Card 2 -->
+        <include
+            layout="@layout/item_listing_card"
+            android:id="@+id/card_2" />
+    </LinearLayout>
+</ScrollView>

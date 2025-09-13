@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Apartment" />
+    <item android:title="Villa" />
+    <item android:title="Independent House" />
+    <item android:title="Studio" />
+</menu>

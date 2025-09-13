@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="1 BHK" />
+    <item android:title="2 BHK" />
+    <item android:title="3 BHK" />
+    <item android:title="4+ BHK" />
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#666666</color>
+    <color name="gray_light">#B0B0B0</color>
+    <color name="green">#00D092</color>
+    <color name="dark_green">#006400</color>
+    <color name="light_purple">#F2F1FF</color>  <!-- Background -->
+    <color name="dark_purple">#4A3AFF</color>  <!-- Text -->
+    <color name="purpleHeader">#4C1F7A</color>
+    <color name="lightGrey">#F5F5F5</color>
+    <color name="lightPurple">#E5DFF4</color>
+    <color name="unselectedText">#000000</color>
+    <color name="selectedText">#4C1F7A</color>
+    <color name="disabledButton">#E0E0E0</color>
+    <color name="greyText">#888888</color>
+    <color name="purpleSelected">#EDE7F6</color>
+    <color name="grayText">#757575</color>
+    <color name="unselectedBackground">#F5F5F5</color>
+    <color name="disabledGray">#DADADA</color>
+
+    <color name="grayTextRoom">#666666</color> <!-- Medium Gray -->
+    <color name="indigo">#4B0082</color>
+
+    <color name="grayBorder">#CCCCCC</color>
+
+    <color name="colorAccent">#5F2D98</color> <!-- Purple shade -->
+    <color name="primaryText">#000000</color> <!-- Black or dark gray -->
+    <color name="secondaryText">#999999</color> <!-- Light gray -->
+
+    <!-- Add other colors as needed -->
+    <color name="bgLight">#F8F8F8</color>
+    <color name="buttonGreen">#00B386</color>
+
+
+
+
+    <!-- Custom Colors -->
+    <color name="Blue">#295F98</color>
+    <color name="Red">#dc3545</color>
+
+    <!-- Material Theme Colors -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple">#E5D4FF</color>
+    <color name="teal_200">#03DAC5</color>
+
+    <!-- Tab UI Colors -->
+    <color name="tab_selected">#9C27B0</color>
+    <color name="tab_unselected">#9E9E9E</color>
+    <color name="grey">#CCCCCC</color>
+
+    <color name="colorPrimary">#005BAC</color> <!-- Dark blue -->
+
+    <!-- Optional: Add this if using in selector or ripple -->
+    <color name="colorPrimaryDark">#004080</color>
+
+
+
+    <color name="splash_color1">#4A148C</color>
+    <color name="splash_color2">#880E4F</color>
+    <color name="splash_color3">#1A237E</color>
+
+</resources>

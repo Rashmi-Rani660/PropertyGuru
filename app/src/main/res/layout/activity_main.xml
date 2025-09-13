@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Property Guru"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Button android:id="@+id/tabAll" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="All" />
+    <Button android:id="@+id/tabProjects" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Projects" />
+    <Button android:id="@+id/tabHousingVerified" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Housing Verified" />
+    <Button android:id="@+id/tabNewLaunches" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="New Launches" />
+    <Button android:id="@+id/tabReadyToMove" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ready To Move" />
+    <Button android:id="@+id/tabOwnerProperties" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Owner Properties" />
+    <Button android:id="@+id/tabYouChoice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="You Choice" />
+
+</LinearLayout>

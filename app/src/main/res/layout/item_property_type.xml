@@ -1,0 +1,112 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:paddingVertical="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnApartment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Apartment"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHouse"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Independent House"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDuplex"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Duplex"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Independent Floor"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVilla"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Villa"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPenthouse"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Penthouse"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStudio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Studio"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSocietyShop"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Society Shop"
+            android:background="@drawable/bg_property_unselected"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+</HorizontalScrollView>

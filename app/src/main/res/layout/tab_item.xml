@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingVertical="6dp"
+    android:layout_marginEnd="6dp">
+
+    <ImageView
+        android:id="@+id/tabIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/all"
+        android:tint="@color/tab_unselected"
+        android:contentDescription="Tab Icon" />
+
+    <TextView
+        android:id="@+id/tabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tab Name"
+        android:textSize="11sp"
+        android:textColor="@color/tab_unselected"
+        android:layout_marginTop="2dp" />
+
+    <View
+        android:id="@+id/tabUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/tab_selected"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+
+</LinearLayout>

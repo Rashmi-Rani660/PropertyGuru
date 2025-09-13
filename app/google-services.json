@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "572402920857",
+    "project_id": "property-guru-b7efe",
+    "storage_bucket": "property-guru-b7efe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572402920857:android:6360c5283f9bdfc52eb708",
+        "android_client_info": {
+          "package_name": "com.example.propertyguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572402920857-4m210l2ao3hqeijuolsk78tbcgfnp9ak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.propertyguru",
+            "certificate_hash": "190c88292ebdef36cf484f718868070f8848d2c0"
+          }
+        },
+        {
+          "client_id": "572402920857-h34tdoirkktompef9ipfp6ho4o6a6erc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDYuG4kj1Cn3jIqtIplFJT1bbHM98C-kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572402920857-1i0dqe9792a7bvfterfsfvrhvfe8n8da.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/project_card_bg">
+
+    <ImageView
+        android:id="@+id/projectImage"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house1" />
+
+    <TextView
+        android:id="@+id/projectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Title"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/projectLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="12sp"
+        android:textColor="#666666" />
+
+    <TextView
+        android:id="@+id/projectPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ Price"
+        android:textSize="13sp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

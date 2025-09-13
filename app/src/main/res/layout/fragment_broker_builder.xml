@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- White Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_rounded"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New to Housing? Let's start"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Phone Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_edittext"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="+91"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:paddingStart="12dp" />
+            </LinearLayout>
+
+            <!-- Continue Button -->
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:enabled="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/bg_button_disabled"
+                android:layout_marginTop="4dp" />
+
+            <!-- Terms -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By clicking above you agree to our Terms and Conditions"
+                android:textSize="12sp"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Truecaller Login -->
+        <Button
+            android:id="@+id/btnTruecaller"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="One Tap Login with Truecaller"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:backgroundTint="#1478f1"
+            android:drawableLeft="@drawable/call"
+            android:drawablePadding="12dp" />
+    </LinearLayout>
+</ScrollView>

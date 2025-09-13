@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="?attr/colorSurface">
+
+        <!-- Property Image -->
+        <ImageView
+            android:id="@+id/propertyImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/house1"
+            android:background="@drawable/rounded_image_bg"
+            android:clipToOutline="true" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/propertyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2BHK Apartment"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/propertyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mumbai"
+            android:textColor="?attr/textColorSecondary"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Type -->
+        <TextView
+            android:id="@+id/propertyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartment"
+            android:textColor="?attr/textColorSecondary"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/propertyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹80 Lakh"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Developer -->
+        <TextView
+            android:id="@+id/developerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tata Housing"
+            android:textColor="?attr/textColorSecondary"
+            android:layout_marginBottom="10dp" />
+
+        <!-- View Number Button -->
+        <Button
+            android:id="@+id/viewNumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="View Number"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#BB86FC"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_marginTop="6dp"
+            android:minWidth="120dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

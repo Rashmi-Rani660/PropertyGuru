@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7FA"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back"
+                android:tint="#222222"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where do you want to Buy?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#222222"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a city which can be changed later"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Search Box -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_search_rounded"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/searchCityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Type city here..."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:paddingEnd="40dp" />
+
+            <ImageView
+                android:id="@+id/micIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/mic"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Mic Icon"
+                android:tint="#6C4EF3"/>
+        </RelativeLayout>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/locationIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/current_location"
+                android:tint="#6C4EF3"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/currentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use my current location"
+                android:textColor="#6C4EF3"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Popular Cities -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Cities"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- 🔽 ADDED THESE 3 BUTTONS BELOW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Row 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/delhiButton"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_city_selector"
+                        android:text="Delhi"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="6dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <Button
+                        android:id="@+id/mumbaiButton"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_city_selector"
+                        android:text="Mumbai"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="6dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <Button
+                        android:id="@+id/bengaluruButton"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_city_selector"
+                        android:text="Bengaluru"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="6dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+
+                <!-- Row 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/noidaButton"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_city_selector"
+                        android:text="Noida"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="6dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <Button
+                        android:id="@+id/gurgaonButton"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_city_selector"
+                        android:text="Gurgaon"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="6dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <Button
+                        android:id="@+id/hyderabadButton"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_city_selector"
+                        android:text="Hyderabad"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="6dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 🔼 BUTTONS ENDED -->
+
+
+        <!-- Search in other cities -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search in 330+ other cities"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"/>
+
+        <!-- A-Z Navigation -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- A to Z Alphabet Buttons -->
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="A"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_alpha_circle"
+                    android:textColor="#6C4EF3"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="B" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="C" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="D" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="E" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="F" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="G" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="H" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="I" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="J" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="K" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="L" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="M" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="N" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="O" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="P" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="Q" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="R" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="S" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="T" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="U" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="V" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="W" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="X" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="Y" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="Z" android:gravity="center" android:textStyle="bold" android:background="@drawable/bg_alpha_circle" android:textColor="#6C4EF3"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- City List -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abohar\nAbu Dhabi\nAdilabad\nAdoni\nAgra..."
+            android:textColor="#555555"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</ScrollView>
